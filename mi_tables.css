@@ -6,30 +6,132 @@
    Case Problem 1
 
    Tables Style Sheet
-   Author: 
-   Date:   
+   Author: Aiden Martinez
+   Date:   12.10.2018
 
    Filename:         mi_tables.css
 
 */
 
-/* Table Styles */
+/*
+==================================================
+Table Styles
+==================================================
+*/
+table {
+    background: linear-gradient(rgb(190, 215, 255), black);
+    border: 5px solid gray;
+    -moz-background: linear-gradient(rgb(190, 215, 255), black);
+    -moz-border: 5px solid gray;
+    -webkit-background: linear-gradient(rgb(190, 215, 255), black);
+    -webkit-border: 5px solid gray;
+    -ms-background: linear-gradient(rgb(190, 215, 255), black);
+    -ms-border: 5px solid gray;
+}
 
+/* The above piece of code changes the background and borders of the web table, as well as adding cross-browser extensions so that the code applies to all major browsers. */
+th,
+td {
+    border: 3px solid gray;
+    line-height: 1.4em;
+    padding: 8px;
+    -moz-border: 3px solid gray;
+    -moz-line-height: 1.4em;
+    -moz-padding: 8px;
+    -webkit-border: 3px solid gray;
+    -webkit-line-height: 1.4em;
+    -webkit-padding: 8px;
+    -ms-border: 3px solid gray;
+    -ms-line-height: 1.4em;
+    -ms-padding: 8px;
+}
 
+/* The above piece of code changes the line height, borders, and padding of the table headers (<th>) and table data cells (<td>), as well as adding cross-browser extensions so that the code applies to all major browsers. */
+th {
+    background-color: black;
+    color: rgb(130, 210, 255);
+    font-weight: normal;
+    -moz-background-color: black;
+    -moz-color: rgb(130, 210, 255);
+    -moz-font-weight: normal;
+    -webkit-background-color: black;
+    -webkit-color: rgb(130, 210, 255);
+    -webkit-font-weight: normal;
+    -ms-background-color: black;
+    -ms-color: rgb(130, 210, 255);
+    -ms-font-weight: normal;
+}
 
-/* Column Styles */
+/* The above piece of code changes the background color, font color, and font weight of the <th> element, as well as adding cross-browser extensions so that the code applies to all major browsers. */
+td {
+    color: white;
+    font-size: 0.9em;
+    vertical-align: top;
+    -moz-color: white;
+    -moz-font-size: 0.9em;
+    -moz-vertical-align: top;
+    -webkit-color: white;
+    -webkit-font-size: 0.9em;
+    -webkit-vertical-align: top;
+    -ms-color: white;
+    -ms-font-size: 0.9em;
+    -ms-vertical-align: top;
+}
 
+/* The above piece of code changes the font color, font size, and vertical positioning of the text of the <td> element, as well as adding cross-browser extensions so that the code applies to all major browsers. */
 
+/*
+==================================================
+Column Styles
+==================================================
+*/
+col#firstCol {
+    width: 24%;
+    -moz-width: 24%;
+    -webkit-width: 24%;
+    -ms-width: 24%;
+}
 
-/* Table Header Styles */
+/* The above piece of code changes the width of the col element with the id, "firstCol," as well as adding cross-browser extensions so that the code applies to all major browsers. */
+col.dataCols {
+    width: 19%;
+    -moz-width: 19%;
+    -webkit-width: 19%;
+    -ms-width: 19%;
+}
 
+/* The above piece of code changes the width of the col element with the class, "dataCols," as well as adding cross-browser extensions so that the code applies to all major browsers. */
 
+/*
+==================================================
+Table Header Styles
+==================================================
+*/
+thead tr {
+    height: 60px;
+    -moz-height: 60px;
+    -webkit-height: 60px;
+    -ms-height: 60px;
+}
 
+/* The above piece of code changes the height of all <tr> elements in the <thead>, including the <thead> element itself, as well as adding cross-browser extensions so that the code applies to all major browsers. */
+thead>tr:first-of-type>th:first-of-type {
+    font-size: 2em;
+    -moz-font-size: 2em;
+    -webkit-font-size: 2em;
+    -ms-font-size: 2em;
+}
 
+/* The above piece of code changes the font size of the first <th> in the first <tr> in the <thead>, as well as adding cross-browser extensions so that the code applies to all major browsers. */
+thead>tr:first-of-type>th:not(:first-of-type) {
+    background-color: transparent;
+    color: black;
+    -moz-background-color: transparent;
+    -moz-color: black;
+    -webkit-background-color: transparent;
+    -webkit-color: black;
+    -ms-background-color: transparent;
+    -ms-color: black;
+}
 
-
-
-
-
-
-
+/* The above piece of code changes the background color and the font color of the first <tr> as well as every <th> element EXCLUDING the first <th> in the <thead> tags, as well as adding cross-browser extensions so that the code applies to all major browsers. */
